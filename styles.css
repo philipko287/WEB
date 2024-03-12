@@ -1,0 +1,142 @@
+﻿body {
+    background-image: url('https://images.wombo.art/generated/8a8deb80-c304-4409-bd0a-085aa32419d9/final.jpg?Expires=1716076854&Signature=jaqpu6MhWXpK8BB5LmahUmpgFeXpSypFAu1kt4vojFXJR6kmxPGljlXVScnGM30LWfNUTtNp~mESVHDtmxPX5x44cyQc0wvwir5LRhlNdwVllAG~FiJqCCc5FtKruS~bEW3fOCxGIEXo3G5N6x1Vp9~BE~~1sp9WCT8f~FPABJKSuybji4F0PPWnsJBtCq59STiH7lktnh7vA3WvE5m4kZGafyvY4VJHPdKBU9HfRWYyXsQ8b7gblCHGjw-97xi484EeWc3YWa8dhSphWUL1lpHM7hoxk8iU61qQuWLnyBON1-REGxAvS29apbztZVAfu0ztjygu~60ckT4WruMKxQ__&Key-Pair-Id=K1ZXCNMC55M2IL'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.section {
+    padding-top: 48px;
+}
+
+.btn-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure the buttons are on top of other content */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: darkslateblue; /* Колір фону */
+    margin: 5% auto;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px; /* Радіус закруглення кутів */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+    color: peachpuff;
+}
+
+#logInBtn {
+    background-color: rgba(0, 0, 0, 0); /* Прозорий фон */
+    border: none; /* Видалення рамки */
+}
+
+#signUPBtn,
+#logInBtn {
+    margin-right: 20px; /* Додати відступ справа */
+}
+
+#viewProfileBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 14px; /* Змінюємо розмір шрифту на 14px */
+}
+
+#editProfileBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 14px; /* Змінюємо розмір шрифту на 14px */
+}
+
+#deleteProfileBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 14px; /* Змінюємо розмір шрифту на 14px */
+}
+
+#logoutBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 14px; /* Змінюємо розмір шрифту на 14px */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Dropup Button */
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-right: 30px;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-right: 20px;
+}
+
+    /* Links inside the dropup */
+    .dropup-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropup links on hover */
+        .dropup-content a:hover {
+            background-color: rgba(0, 0, 0, 0) /*!!!!!*/
+        }
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+    display: block;
+}
